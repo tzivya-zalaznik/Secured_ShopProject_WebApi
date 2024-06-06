@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../Style/HomePage.css" rel="stylesheet" />
+    <script src="../Scripts/user.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Home Page</h1>
+        <h3 id="result"></h3>
+        <br /><br />
+        <a href="update.html">עדכון פרטים</a>
+        <a href="Products.html">לחנות</a>
+    </div>
+    <script>
+        document.getElementById("result").innerHTML = JSON.parse(sessionStorage.getItem("user")).firstName + " שלום ";
+    </script>
+</body>
+</html>

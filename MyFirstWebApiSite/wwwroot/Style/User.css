@@ -1,0 +1,173 @@
+﻿body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f3;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    background: #fff;
+    padding: 2em;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+label {
+    font-size: 1.1em;
+    color: #666;
+    margin-top: 15px;
+    display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+        border-color: #d96e86;
+    }
+
+input[type="button"] {
+    width: 100%;
+    background-color: #d96e86;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+    input[type="button"]:hover {
+        background-color: #d96e86;
+    }
+
+.progressStyle {
+    width: 100%;
+    height: 20px;
+    margin: 10px 0;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f5f5f5;
+}
+
+progress::-webkit-progress-value {
+    background-color: #d96e86;
+}
+
+p {
+    font-size: 1em;
+    color: #999;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+a {
+    font-size: 1em;
+    color: #d96e86;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s;
+}
+
+    a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #d96e86;
+        bottom: 0;
+        left: 0;
+        transition: transform 0.4s;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+    }
+
+    a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    a:hover {
+        color: #d96e86;
+    }
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #0e0f0f;
+    font-size: 20px;
+}
+.progressStyle {
+    background-image: linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0,0, 0, .1) 66%, transparent 66%), linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)), linear-gradient(left, #09c, #f44);
+    border-radius: 2px;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.progressStyle {
+    appearance: none;
+    height: 15px;
+    width: 70%;
+    margin: 10px 0;
+}
+
+.progressStyle::-webkit-progress-value {
+        background: linear-gradient(to right, #ff0000, #ff6600, #ffcc00, #33cc33);
+}
+
+.progressStyle::-webkit-progress-bar {
+        background-color: #f0f0f0;
+}
+
+.progressStyle {
+    appearance: none;
+    height: 15px;
+    width: 70%;
+    margin: 10px 0;
+}
+
+.progressStyle::-webkit-progress-value {
+        background: linear-gradient(to right, #ff0000, #ff6600, #ffcc00, #33cc33);
+ }
+
+.progressStyle::-webkit-progress-bar {
+        background-color: #f0f0f0;
+}

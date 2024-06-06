@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Style/ShoppingBag.css" rel="stylesheet" />
+    <template id="temp-row">
+        <tr class="item-row">
+            <td class="totalColumn delete"><div class="expandoHeight" style="height: 99px;"><a href="#" title="לחצו כאן כדי להסיר את פריט זה" class="Hide DeleteButton showText"></a></div></td>
+            <td class="imageColumn"><a rel="lightbox" href="#"><img class="image" style="width:9vw;height:auto"></img></a></td>
+            <td class="descriptionColumn"><div><h3 class="itemName"></h3><h6><p class="itemNumber"></p><a class="viewLink" href="">לפרטים נוספים</a></h6></div></td>
+            <td class="availabilityColumn"><div>במלאי</div></td>
+            <td class=""><p class="price"></p></td>
+            <td class="plus"><button>+</button></td>
+            <td class="quantity"><div></div></td>
+            <td class="minus"><button>-</button></td>
+        </tr>
+    </template>
+</head>
+<header>
+    <div class="bar">
+        <img class="logo" src="Images/logo.png" />
+    </div>
+</header>
+<body>
+    <div class="cart">
+        <section class="QuickLinks">
+            <ul>
+                <li>
+                    <a class="nxbtn primary shopmore" href="Products.html?fromShoppingBag=1">המשך בקניה</a>
+                </li>
+                <li class="" data-section="myAccount">
+                    <a class="nxbtn primary GoToCheckout TopLink checkout_transfer" href="#" onclick="placeOrder(); return false;">לביצוע ההזמנה</a>
+                </li>
+            </ul>
+        </section>
+        <h1> סל קניות </h1>
+        <p>
+            הסל שלך מכיל <span id="itemCount"></span> פריטים ומגיע לסך של <span id="totalAmount"></span>
+        </p>
+        <div class="cistGroup">
+            <table id="items" class="items">
+                <thead>
+                    <tr>
+                        <th>הסרת פריט</th>
+                        <th class="itemsColumn" colspan="2">פריטים</th>
+                        <th>זמינות</th>
+                        <th class="totalColumn">סכום הזמנה</th>
+                        <th colspan="3">כמות</th> <!-- Header for Quantity -->
+                    </tr>
+                </thead>
+                <tbody id="itemList"></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="../Scripts/ShoppingBag.js"></script>
+</html>

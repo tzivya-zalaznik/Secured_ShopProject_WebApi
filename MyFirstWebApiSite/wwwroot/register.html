@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../Style/User.css" rel="stylesheet" />
+    <script src="../Scripts/user.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <label>שם משתמש</label>
+        <input type="text" id="userName" />
+        <br /><br />
+        <label>סיסמא</label>
+        <input id="password" type="password" oninput="checkPassword()" />
+        <br /><br />
+        <progress class="progressStyle" id="password-strength-progress" max="4"></progress>
+        <p id="password-strength-text"></p>
+        <label>שם פרטי</label>
+        <input type="text" id="firstName" />
+        <br /><br />
+        <label>שם משפחה</label>
+        <input type="text" id="lastName" />
+        <br /><br />
+        <input type="button" value="רישום" onclick="register()" />
+    </div>
+</body>
+</html>
